@@ -8,12 +8,15 @@ public class timer : MonoBehaviour
     GameObject Charlie;
     interaction interactionS;
 
+    public bool fin;
+
 
     public Text timeText;
     public float targetTime = 60.0f;
     // Start is called before the first frame update
     void Start()
     {
+
         Charlie = GameObject.Find("EventSystem");
         //targetTime = GetComponent<float>();
         interactionS = Charlie.GetComponent<interaction>();
@@ -26,7 +29,6 @@ public class timer : MonoBehaviour
         Charlie = GameObject.Find("EventSystem");
         //targetTime = GetComponent<float>();
         interactionS = (interaction)FindObjectOfType(typeof(interaction));
-        //interactionS = Charlie.GetComponent<interaction>();
         if (interactionS.win != true)
         {
             targetTime -= Time.deltaTime;
@@ -35,6 +37,7 @@ public class timer : MonoBehaviour
             if (targetTime <= 0.0f)
             {
                 timerEnded();
+                Debug.Log("fini");
             }
         }
         
@@ -42,6 +45,7 @@ public class timer : MonoBehaviour
     }
     void timerEnded()
     {
+        fin = true;
         Debug.Log("fini");
     }
 }
