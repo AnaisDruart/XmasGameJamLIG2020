@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4060826182718352358}
   - component: {fileID: 4060826182718352359}
   - component: {fileID: 4060826182718352280}
+  - component: {fileID: 7739792393972570640}
+  - component: {fileID: 1321580147467108365}
   m_Layer: 0
   m_Name: charlie
   m_TagString: Untagged
@@ -96,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45a38a271ee4b4462ba2f650a7f82d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  win: 0
 --- !u!61 &4060826182718352280
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -109,7 +112,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0014647841, y: -0.00073060393}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -120,5 +123,39 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.28675544, y: 0.32051355}
   m_EdgeRadius: 0
+--- !u!114 &7739792393972570640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4060826182718352356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
+  serverOnly: 0
+  m_AssetId: 
+  hasSpawned: 0
+--- !u!114 &1321580147467108365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4060826182718352356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  clientAuthority: 1
+  localPositionSensitivity: 0.01
+  localRotationSensitivity: 0.01
+  localScaleSensitivity: 0.01
