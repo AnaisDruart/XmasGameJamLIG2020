@@ -202,6 +202,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af28a01ba8d054fcd92f111a164592b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   difficulty: 100
   SpawnPoints:
   - {fileID: 770379963}
@@ -220,6 +222,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70bc60fbf99f84262bf7d0f60b2298a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   timeText: {fileID: 1592704595}
   targetTime: 60
 --- !u!114 &199364597
@@ -229,7 +233,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199364591}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1545738d3ad0341ee8ef8de1d4515d06, type: 3}
   m_Name: 
@@ -305,6 +309,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7739792393972570640, guid: a92bd5630ce544c81b4f8d555c237403,
+        type: 3}
+      propertyPath: sceneId
+      value: 2856298626
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a92bd5630ce544c81b4f8d555c237403, type: 3}
@@ -848,7 +857,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
